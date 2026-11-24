@@ -4,58 +4,52 @@ Header - style, title, center
 main - inline side by side 
 */
 
-Header{
+body{
+    background-image: url(https://dl.backgroundsarchive.net/pub/48/48769tgszoyr2h5.jpg);
+}
+
+ .StartContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+img{
+  width:70%;
+  height: 70px;
+  display: inline;
+}
+
+.StartText {
+  font-family: "Lucida Console", "Courier New", monospace;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Flowers{
+    width:100%;
+}
+
+.NavBar {
+    background-image: url();
     text-align: center;
+       padding: 10px;
 }
 
-.MainBox{
-background:url(back01.gif);
-border:5px solid #c6bbaa;
-box-sizing:border-box;
-margin: 1em, 0; 
-padding:5px;
-width:100%;
-
-}
-.MainInnerBox{
-background:#fff;
-border:2px dashed #c6bbaa;
-padding:20px;
-display: flex;
-
+.FlowerImg{
+    height:50px;
+    width:120px;
+    position:relative;
 }
 
-.Box_1{
-background:url(back01.gif);
-border:5px solid #c6bbaa;
-box-sizing:border-box;
-margin:1em 0; 
-padding:5px;
-width:100%;
-}
- 
-.InnerBox_1_1{
-background:#fff;
-border:2px dashed #c6bbaa;
-padding:20px;
-display: flex;
-}
-
-.Box_2{
-background:url(back01.gif);
-border:5px solid #c6bbaa;
-box-sizing:border-box;
-margin:1em 0; 
-padding:5px;
-width:100%;
-
-}
-
-.Box_3{
-background:url(back01.gif);
-border:5px solid #c6bbaa;
-box-sizing:border-box;
-margin:1em 0; 
-padding:5px;
-width:100%;
+button{
+    height: 40px;
+    width: 250px;
+    color:aliceblue;
+    background-color: rgb(238, 177, 216);
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
