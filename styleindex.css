@@ -38,10 +38,10 @@ img{
     width:100%;
 }
 
-.NavBar {
+Nav {
     background-image: url(); /*Image here*/
     text-align: center;
-       padding: 10px;
+    padding: 10px;
 }
 
 /*Navbar*/
