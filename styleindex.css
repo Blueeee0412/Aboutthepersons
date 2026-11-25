@@ -5,9 +5,10 @@ main - inline side by side
 */
 
 body{
-    background-image: url(https://dl.backgroundsarchive.net/pub/48/48769tgszoyr2h5.jpg);
+    background-image: url(https://dl.backgroundsarchive.net/pub/2/2843v3oxp8524v.jpg); /*Image here*/
 }
 
+/*First container Box*/
  .StartContainer {
   position: relative;
   text-align: center;
@@ -20,25 +21,30 @@ img{
   display: inline;
 }
 
+/*Display text*/
 .StartText {
   font-family: "Lucida Console", "Courier New", monospace;
-
+  font-size: xx-large;
+  font-weight:bolder;
+  transform: rotate(10deg) translate(-50%, 30%) scale(1.4);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  color: aliceblue;
 }
 
+/*Divider Banner*/
 .Flowers{
     width:100%;
 }
 
 .NavBar {
-    background-image: url();
+    background-image: url(); /*Image here*/
     text-align: center;
        padding: 10px;
 }
 
+/*Navbar*/
 .FlowerImg{
     height:50px;
     width:120px;
@@ -49,7 +55,26 @@ button{
     height: 40px;
     width: 250px;
     color:aliceblue;
-    background-color: rgb(238, 177, 216);
+    background-color: rgb(177, 237, 238);
     text-align: center;
     font-family: "Lucida Console", "Courier New", monospace;
 }
+
+
+/*Layout Main containers*/
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template:
+    "header header"
+    "nav NavBar"
+    "sidebar main"
+    "footer footer"
+    / 100px 1fr;
+}
+
+header { grid-area: header; }
+nav { grid-area: NavBar; }
+aside { grid-area: sidebar; }
+main { grid-area: main; }
+footer { grid-area: footer; }
